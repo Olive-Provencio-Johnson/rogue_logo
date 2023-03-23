@@ -15,6 +15,7 @@ inquirer.prompt([
   message: 'Please enter up to three characters for your logo',
 },
 {
+    //how will this be processed in the terminal with basic input?
     type: 'input',
     name: 'text color',
     message: 'Please enter a color keyword or hexadecimal number to indicate your logo text color',
@@ -26,6 +27,7 @@ inquirer.prompt([
     choices: ["Circle", "Triangle", "Square"], 
   },
   {
+    //how will this be processed in the terminal with basic input?
     type: 'list',
     name: 'shape color',
     message: 'Please enter a color keyword or hexadecimal number to indicate your logo shape color',
