@@ -28,10 +28,9 @@ inquirer.prompt([
   },
   {
     //how will this be processed in the terminal with basic input?
-    type: 'list',
+    type: 'input',
     name: 'shapeColor',
     message: 'Please enter a color keyword or hexadecimal number to indicate your logo shape color',
-    choices: ["Circle", "Triangle", "Square"], 
   },
 ]).then((data) => {
     console.log(data);
