@@ -46,8 +46,6 @@ inquirer.prompt([
 
 
 
-// **WHEN I open the `logo.svg` file in a browser
-// ----THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 // While not a requirement, it is recommended that you place any common functionality and properties shared by the Triangle, Circle, and Square classes in a parent Shape class and use inheritance to reuse the code in the child classes.
 
