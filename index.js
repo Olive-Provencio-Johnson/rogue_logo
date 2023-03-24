@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const { Triagnle } = require("./lib/shapes");
+const { Triangle, Circle, Square } = require("./lib/shapes");
 
 // GIVEN a command-line application that accepts user input
 // -----prompt for text = enter up to three characters
