@@ -11,36 +11,38 @@ const fs = require("fs");
 inquirer.prompt([
 {
   type: 'input',
-  name: 'logo characters',
+  name: 'logoCharacters',
   message: 'Please enter up to three characters for your logo',
 },
 {
     //how will this be processed in the terminal with basic input?
     type: 'input',
-    name: 'text color',
+    name: 'textColor',
     message: 'Please enter a color keyword or hexadecimal number to indicate your logo text color',
   },
   {
     type: 'list',
-    name: 'logo shape',
+    name: 'logoShape',
     message: 'Please choose your logo shape from the list provided here',
     choices: ["Circle", "Triangle", "Square"], 
   },
   {
     //how will this be processed in the terminal with basic input?
     type: 'list',
-    name: 'shape color',
+    name: 'shapeColor',
     message: 'Please enter a color keyword or hexadecimal number to indicate your logo shape color',
     choices: ["Circle", "Triangle", "Square"], 
   },
-]);
+]).then((data) => {
+    console.log(data);
+})
 
 
 // SVG file is created named `logo.svg AND the output text "Generated logo.svg" is printed in the command line
-fs.writeFile('logo.svg', data, (err) => {
-    if (err) throw err;
-    console.log('Generated logo.svg');
-  });
+// fs.writeFile('logo.svg', data, (err) => {
+//     if (err) throw err;
+//     console.log('Generated logo.svg');
+//   });
 
 
 
