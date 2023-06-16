@@ -50,7 +50,7 @@ function run() {
             data.logoCharacters, 
             data.shapeColor,
         );
-      } else if (data.logoShape === "Square") {
+      } else {
         shape = new Square(
             data.textColor,
             data.logoCharacters,
@@ -59,7 +59,7 @@ function run() {
       }
       console.log(shape);
       // SVG file is created named `logo.svg` AND the output text "Generated logo.svg" is printed in the command line
-      fs.writeFile("logo.svg", shape.print(), (err) => {
+      fs.writeFile("./examples/logo.svg", shape.print(), (err) => {
         if (err) throw err;
         console.log("Generated logo.svg");
       });

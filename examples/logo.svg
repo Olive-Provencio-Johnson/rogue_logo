@@ -1,0 +1,4 @@
+<svg height="300" width="200">
+        <polygon points="200,300 100,0 0,300" style="fill:yellow" />
+        <text x="100" y="175" font-size="40" text-anchor="middle" fill="blue">HSP</text>
+      </svg>
